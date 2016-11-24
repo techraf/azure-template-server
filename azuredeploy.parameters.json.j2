@@ -1,0 +1,30 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Generation": {
+      "value": "{{ generation_number }}"
+    },
+    "StorageAccountName": {
+      "value": "{{ server_storage_account }}"
+    },
+    "VirtualNetworkName": {
+      "value": "{{ vm_network_name }}"
+    },
+    "vmName": {
+      "value": "{{ server_name }}"
+    },
+    "vmSize": {
+      "value": "{{ vm_size }}"
+    },
+    "imageSKU": {
+      "value": "{{ image_sku }}"
+    },
+    "adminUsername": {
+      "value": "{{ admin_username }}"
+    },
+    "adminPassword": {
+      "value": "{{ admin_password }}"
+    }
+  }
+}
